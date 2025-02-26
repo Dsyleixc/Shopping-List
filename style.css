@@ -1,0 +1,89 @@
+body {
+   background-color: #242424;
+   font-family: 'Roboto', sans-serif;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   height: 100vh;
+   margin: 0;
+}
+
+input {
+   height: 1.5rem;
+}
+
+button {
+   height: 1.5rem;
+   width: 100px;
+}
+
+p {
+   color: #fff;
+   padding: 0;
+   margin: 0;
+}
+
+ul {
+   padding: 0;
+   margin: 0;
+}
+
+.title {
+   color: #fff;
+}
+
+.section {
+   display: flex;
+   flex-direction: column;
+   width: 25%;
+}
+
+.input {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   width: 100%;
+   gap: 10px;
+   padding-bottom: 0.5em;
+   border-bottom: 1px solid #fff;
+}
+
+.list {
+   display: flex;
+   flex-direction: column;
+   width: 100%;
+}
+
+.list-container {
+   display: flex;
+   align-items: center;
+   padding-top: 0.5em;
+   padding-left: 1.5em; /* Space for bullet */
+   position: relative; /* For absolute positioning of bullet */
+   width: 100%;
+}
+
+.list-container::before {
+   content: '•';
+   position: absolute;
+   left: 0.5em;
+   color: #fff; /* Match your text color */
+}
+
+.list-container p {
+   padding-right: 1em;
+}
+
+.list-item {
+   color: #fff;
+}
+
+#input-text {
+   color: #fff;
+}
+
+#list-text {
+   color: #fff;
+   padding: 0;
+   padding-top: 10px;
+}
