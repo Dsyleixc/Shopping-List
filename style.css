@@ -4,8 +4,9 @@ body {
    display: flex;
    flex-direction: column;
    align-items: center;
-   height: 100vh;
-   margin: 0;
+   min-height: auto;
+   margin-top: 14em;
+   margin-bottom: 0px;
 }
 
 input {
@@ -36,6 +37,10 @@ ul {
    display: flex;
    flex-direction: column;
    width: 25%;
+   max-height: 60vh;
+   overflow-x: hidden;
+   overflow-y: hidden;
+   padding-right: 5px;
 }
 
 .input {
@@ -51,16 +56,21 @@ ul {
 .list {
    display: flex;
    flex-direction: column;
-   width: 100%;
+   width: calc(100% - 20px); /* Subtract padding from width */
+   overflow-x: hidden;
+   overflow-y: auto;
+   padding: 0 20px; /* Simplified padding */
 }
 
 .list-container {
    display: flex;
    align-items: center;
+   justify-content: space-between;
    padding-top: 0.5em;
-   padding-left: 1.5em; /* Space for bullet */
-   position: relative; /* For absolute positioning of bullet */
+   padding-left: 1.5em;
+   position: relative;
    width: 100%;
+   box-sizing: border-box; /* Include padding in width calculation */
 }
 
 .list-container::before {
@@ -72,6 +82,10 @@ ul {
 
 .list-container p {
    padding-right: 1em;
+}
+
+.list-container button {
+   margin-right: 2em;
 }
 
 .list-item {

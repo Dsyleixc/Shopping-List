@@ -49,5 +49,10 @@ const addItem = function () {
 
 // Add new list Item on click
 button.addEventListener('click', () => {
+   if (input.value === '') {
+      alert('cannot be blank');
+      return;
+   }
+
    addItem();
 });
